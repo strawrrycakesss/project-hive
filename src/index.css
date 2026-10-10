@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  font-family:Inter,ui-sans-serif,system-ui,sans-serif;
+  background:#05070b;
+  color:#f1f5f9;
+}
+*{box-sizing:border-box}
+body{margin:0;min-width:320px}
+.container{width:min(1180px,calc(100% - 2rem));margin:auto}
+.card{
+  background:#0f1420;
+  border:1px solid rgba(0, 240, 118, 0.25);
+  border-radius:14px;
+  padding:1.25rem;
+  box-shadow:0 10px 40px rgba(0,0,0,.5), 0 0 20px rgba(0, 240, 118, 0.08);
+  transition:all 0.2s ease;
+}
+.card:hover{
+  border-color:rgba(0, 240, 118, 0.5);
+  box-shadow:0 15px 50px rgba(0,0,0,.6), 0 0 25px rgba(0, 240, 118, 0.18);
+}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:10px;padding:.7rem 1.2rem;font-weight:700;transition:all 0.2s ease}
+.btn-primary{
+  background:#00f076;
+  color:#05070b;
+  box-shadow:0 0 25px rgba(0, 240, 118, 0.4);
+}
+.btn-primary:hover{
+  background:#10b981;
+  box-shadow:0 0 35px rgba(0, 240, 118, 0.6);
+}
+.btn-secondary{
+  background:#161e2e;
+  border:1px solid rgba(245, 196, 81, 0.4);
+  color:#f5c451;
+}
+.btn-secondary:hover{
+  background:#1e293b;
+  border-color:#f5c451;
+}
+.input{width:100%;background:#090d16;border:1px solid rgba(0, 240, 118, 0.3);border-radius:10px;padding:.7rem;color:white}
+.input:focus{outline:none;border-color:#00f076;box-shadow:0 0 15px rgba(0, 240, 118, 0.3)}
+.label{display:block;font-size:.85rem;color:#cbd5e1;margin-bottom:.35rem}
+.stat{font-size:2rem;font-weight:800;color:#f5c451}
+.muted{color:#94a3b8}
